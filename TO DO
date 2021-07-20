@@ -1,0 +1,8 @@
+# bluetooth connection
+sudo hciconfig hci0 piscan
+# can connect
+
+sudo usermod -G bluetooth -a pi
+sudo chgrp bluetooth /var/run/sdp
+python3 Desktop/controls/bt1.py
+
